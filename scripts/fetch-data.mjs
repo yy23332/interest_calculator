@@ -1,6 +1,5 @@
 import fs from "node:fs/promises";
 import path from "node:path";
-import { pathToFileURL } from "node:url";
 
 export const SOURCES = {
   lpr: "https://www.bankofchina.com/fimarkets/lilv/fd32/201310/t20131031_2591219.html",
@@ -145,9 +144,15 @@ export async function writeDataset(outputPath = OUTPUT_PATH) {
   return dataset;
 }
 
-if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
-  const dataset = await writeDataset();
-  console.log(
-    `已写入 ${OUTPUT_PATH}: LPR ${dataset.lpr.length} 条，贷款基准利率 ${dataset.benchmark.length} 条`
-  );
+if (process.argv[1]?.endsWith("fetch-data.mjs")) {
+  writeDataset()
+    .then((dataset) => {
+      console.log(
+        `已写入 ${OUTPUT_PATH}: LPR ${dataset.lpr.length} 条，贷款基准利率 ${dataset.benchmark.length} 条`
+      );
+    })
+    .catch((error) => {
+      console.error(error);
+      process.exitCode = 1;
+    });
 }
