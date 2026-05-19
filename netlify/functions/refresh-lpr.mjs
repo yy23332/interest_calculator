@@ -1,11 +1,17 @@
-import fs from "node:fs/promises";
-import path from "node:path";
 import { buildDataset } from "../../scripts/fetch-data.mjs";
 
-async function readExistingDataset() {
-  const file = path.resolve("public/data/interest-rates.json");
-  const text = await fs.readFile(file, "utf8");
-  return JSON.parse(text);
+async function readExistingDataset(event) {
+  const host = event.headers.host;
+  const protocol = host?.includes("localhost") ? "http" : "https";
+  const response = await fetch(`${protocol}://${host}/data/interest-rates.json`, {
+    headers: { accept: "application/json" }
+  });
+
+  if (!response.ok) {
+    throw new Error(`无法读取已发布的数据文件：${response.status}`);
+  }
+
+  return response.json();
 }
 
 export async function handler(event) {
@@ -18,7 +24,7 @@ export async function handler(event) {
   }
 
   try {
-    const [previous, dataset] = await Promise.all([readExistingDataset(), buildDataset()]);
+    const [previous, dataset] = await Promise.all([readExistingDataset(event), buildDataset()]);
     const previousLatest = previous.lpr.at(-1)?.date ?? "";
     const latest = dataset.lpr.at(-1)?.date ?? "";
 
