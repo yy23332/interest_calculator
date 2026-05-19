@@ -1,0 +1,10 @@
+{
+  "name": "interest-rate-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fetch:data": "node scripts/fetch-data.mjs",
+    "dev": "node server.mjs"
+  }
+}

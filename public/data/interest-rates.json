@@ -1,0 +1,736 @@
+{
+  "generatedAt": "2026-05-15T13:11:26.385Z",
+  "sources": {
+    "lpr": "https://www.bankofchina.com/fimarkets/lilv/fd32/201310/t20131031_2591219.html",
+    "benchmark": "https://camlmac.pbc.gov.cn/zhengcehuobisi/125207/125213/125440/125838/125888/2968985/index.html"
+  },
+  "lpr": [
+    {
+      "date": "2019-08-20",
+      "oneYear": 4.25,
+      "fiveYearPlus": 4.85
+    },
+    {
+      "date": "2019-09-20",
+      "oneYear": 4.2,
+      "fiveYearPlus": 4.85
+    },
+    {
+      "date": "2019-10-21",
+      "oneYear": 4.2,
+      "fiveYearPlus": 4.85
+    },
+    {
+      "date": "2019-11-20",
+      "oneYear": 4.15,
+      "fiveYearPlus": 4.8
+    },
+    {
+      "date": "2019-12-20",
+      "oneYear": 4.15,
+      "fiveYearPlus": 4.8
+    },
+    {
+      "date": "2020-01-20",
+      "oneYear": 4.15,
+      "fiveYearPlus": 4.8
+    },
+    {
+      "date": "2020-02-20",
+      "oneYear": 4.05,
+      "fiveYearPlus": 4.75
+    },
+    {
+      "date": "2020-03-20",
+      "oneYear": 4.05,
+      "fiveYearPlus": 4.75
+    },
+    {
+      "date": "2020-04-20",
+      "oneYear": 3.85,
+      "fiveYearPlus": 4.65
+    },
+    {
+      "date": "2020-05-20",
+      "oneYear": 3.85,
+      "fiveYearPlus": 4.65
+    },
+    {
+      "date": "2020-06-22",
+      "oneYear": 3.85,
+      "fiveYearPlus": 4.65
+    },
+    {
+      "date": "2020-07-20",
+      "oneYear": 3.85,
+      "fiveYearPlus": 4.65
+    },
+    {
+      "date": "2020-08-20",
+      "oneYear": 3.85,
+      "fiveYearPlus": 4.65
+    },
+    {
+      "date": "2020-09-21",
+      "oneYear": 3.85,
+      "fiveYearPlus": 4.65
+    },
+    {
+      "date": "2020-10-20",
+      "oneYear": 3.85,
+      "fiveYearPlus": 4.65
+    },
+    {
+      "date": "2020-11-20",
+      "oneYear": 3.85,
+      "fiveYearPlus": 4.65
+    },
+    {
+      "date": "2020-12-21",
+      "oneYear": 3.85,
+      "fiveYearPlus": 4.65
+    },
+    {
+      "date": "2021-01-20",
+      "oneYear": 3.85,
+      "fiveYearPlus": 4.65
+    },
+    {
+      "date": "2021-02-22",
+      "oneYear": 3.85,
+      "fiveYearPlus": 4.65
+    },
+    {
+      "date": "2021-03-22",
+      "oneYear": 3.85,
+      "fiveYearPlus": 4.65
+    },
+    {
+      "date": "2021-04-20",
+      "oneYear": 3.85,
+      "fiveYearPlus": 4.65
+    },
+    {
+      "date": "2021-05-20",
+      "oneYear": 3.85,
+      "fiveYearPlus": 4.65
+    },
+    {
+      "date": "2021-06-21",
+      "oneYear": 3.85,
+      "fiveYearPlus": 4.65
+    },
+    {
+      "date": "2021-07-20",
+      "oneYear": 3.85,
+      "fiveYearPlus": 4.65
+    },
+    {
+      "date": "2021-08-20",
+      "oneYear": 3.85,
+      "fiveYearPlus": 4.65
+    },
+    {
+      "date": "2021-09-22",
+      "oneYear": 3.85,
+      "fiveYearPlus": 4.65
+    },
+    {
+      "date": "2021-10-20",
+      "oneYear": 3.85,
+      "fiveYearPlus": 4.65
+    },
+    {
+      "date": "2021-11-22",
+      "oneYear": 3.85,
+      "fiveYearPlus": 4.65
+    },
+    {
+      "date": "2021-12-20",
+      "oneYear": 3.8,
+      "fiveYearPlus": 4.65
+    },
+    {
+      "date": "2022-01-20",
+      "oneYear": 3.7,
+      "fiveYearPlus": 4.6
+    },
+    {
+      "date": "2022-02-21",
+      "oneYear": 3.7,
+      "fiveYearPlus": 4.6
+    },
+    {
+      "date": "2022-03-21",
+      "oneYear": 3.7,
+      "fiveYearPlus": 4.6
+    },
+    {
+      "date": "2022-04-20",
+      "oneYear": 3.7,
+      "fiveYearPlus": 4.6
+    },
+    {
+      "date": "2022-05-20",
+      "oneYear": 3.7,
+      "fiveYearPlus": 4.45
+    },
+    {
+      "date": "2022-06-20",
+      "oneYear": 3.7,
+      "fiveYearPlus": 4.45
+    },
+    {
+      "date": "2022-07-20",
+      "oneYear": 3.7,
+      "fiveYearPlus": 4.45
+    },
+    {
+      "date": "2022-08-22",
+      "oneYear": 3.65,
+      "fiveYearPlus": 4.3
+    },
+    {
+      "date": "2022-09-20",
+      "oneYear": 3.65,
+      "fiveYearPlus": 4.3
+    },
+    {
+      "date": "2022-10-20",
+      "oneYear": 3.65,
+      "fiveYearPlus": 4.3
+    },
+    {
+      "date": "2022-11-21",
+      "oneYear": 3.65,
+      "fiveYearPlus": 4.3
+    },
+    {
+      "date": "2022-12-20",
+      "oneYear": 3.65,
+      "fiveYearPlus": 4.3
+    },
+    {
+      "date": "2023-01-20",
+      "oneYear": 3.65,
+      "fiveYearPlus": 4.3
+    },
+    {
+      "date": "2023-02-20",
+      "oneYear": 3.65,
+      "fiveYearPlus": 4.3
+    },
+    {
+      "date": "2023-03-20",
+      "oneYear": 3.65,
+      "fiveYearPlus": 4.3
+    },
+    {
+      "date": "2023-04-20",
+      "oneYear": 3.65,
+      "fiveYearPlus": 4.3
+    },
+    {
+      "date": "2023-05-22",
+      "oneYear": 3.65,
+      "fiveYearPlus": 4.3
+    },
+    {
+      "date": "2023-06-20",
+      "oneYear": 3.55,
+      "fiveYearPlus": 4.2
+    },
+    {
+      "date": "2023-07-20",
+      "oneYear": 3.55,
+      "fiveYearPlus": 4.2
+    },
+    {
+      "date": "2023-08-21",
+      "oneYear": 3.45,
+      "fiveYearPlus": 4.2
+    },
+    {
+      "date": "2023-09-20",
+      "oneYear": 3.45,
+      "fiveYearPlus": 4.2
+    },
+    {
+      "date": "2023-10-20",
+      "oneYear": 3.45,
+      "fiveYearPlus": 4.2
+    },
+    {
+      "date": "2023-11-20",
+      "oneYear": 3.45,
+      "fiveYearPlus": 4.2
+    },
+    {
+      "date": "2023-12-20",
+      "oneYear": 3.45,
+      "fiveYearPlus": 4.2
+    },
+    {
+      "date": "2024-01-22",
+      "oneYear": 3.45,
+      "fiveYearPlus": 4.2
+    },
+    {
+      "date": "2024-02-20",
+      "oneYear": 3.45,
+      "fiveYearPlus": 3.95
+    },
+    {
+      "date": "2024-03-20",
+      "oneYear": 3.45,
+      "fiveYearPlus": 3.95
+    },
+    {
+      "date": "2024-04-22",
+      "oneYear": 3.45,
+      "fiveYearPlus": 3.95
+    },
+    {
+      "date": "2024-05-20",
+      "oneYear": 3.45,
+      "fiveYearPlus": 3.95
+    },
+    {
+      "date": "2024-06-20",
+      "oneYear": 3.45,
+      "fiveYearPlus": 3.95
+    },
+    {
+      "date": "2024-07-22",
+      "oneYear": 3.35,
+      "fiveYearPlus": 3.85
+    },
+    {
+      "date": "2024-08-20",
+      "oneYear": 3.35,
+      "fiveYearPlus": 3.85
+    },
+    {
+      "date": "2024-09-20",
+      "oneYear": 3.35,
+      "fiveYearPlus": 3.85
+    },
+    {
+      "date": "2024-10-21",
+      "oneYear": 3.1,
+      "fiveYearPlus": 3.6
+    },
+    {
+      "date": "2024-11-20",
+      "oneYear": 3.1,
+      "fiveYearPlus": 3.6
+    },
+    {
+      "date": "2024-12-20",
+      "oneYear": 3.1,
+      "fiveYearPlus": 3.6
+    },
+    {
+      "date": "2025-01-20",
+      "oneYear": 3.1,
+      "fiveYearPlus": 3.6
+    },
+    {
+      "date": "2025-02-20",
+      "oneYear": 3.1,
+      "fiveYearPlus": 3.6
+    },
+    {
+      "date": "2025-03-20",
+      "oneYear": 3.1,
+      "fiveYearPlus": 3.6
+    },
+    {
+      "date": "2025-04-21",
+      "oneYear": 3.1,
+      "fiveYearPlus": 3.6
+    },
+    {
+      "date": "2025-05-20",
+      "oneYear": 3,
+      "fiveYearPlus": 3.5
+    },
+    {
+      "date": "2025-06-20",
+      "oneYear": 3,
+      "fiveYearPlus": 3.5
+    },
+    {
+      "date": "2025-07-21",
+      "oneYear": 3,
+      "fiveYearPlus": 3.5
+    },
+    {
+      "date": "2025-08-20",
+      "oneYear": 3,
+      "fiveYearPlus": 3.5
+    },
+    {
+      "date": "2025-09-22",
+      "oneYear": 3,
+      "fiveYearPlus": 3.5
+    },
+    {
+      "date": "2025-10-20",
+      "oneYear": 3,
+      "fiveYearPlus": 3.5
+    },
+    {
+      "date": "2025-11-20",
+      "oneYear": 3,
+      "fiveYearPlus": 3.5
+    },
+    {
+      "date": "2025-12-22",
+      "oneYear": 3,
+      "fiveYearPlus": 3.5
+    },
+    {
+      "date": "2026-01-20",
+      "oneYear": 3,
+      "fiveYearPlus": 3.5
+    },
+    {
+      "date": "2026-02-24",
+      "oneYear": 3,
+      "fiveYearPlus": 3.5
+    },
+    {
+      "date": "2026-03-20",
+      "oneYear": 3,
+      "fiveYearPlus": 3.5
+    },
+    {
+      "date": "2026-04-20",
+      "oneYear": 3,
+      "fiveYearPlus": 3.5
+    }
+  ],
+  "benchmark": [
+    {
+      "date": "1991-04-21",
+      "withinSixMonths": 8.1,
+      "sixMonthsToOneYear": 8.64,
+      "oneToThreeYears": 9,
+      "threeToFiveYears": 9.54,
+      "fiveYearPlus": 9.72
+    },
+    {
+      "date": "1993-05-15",
+      "withinSixMonths": 8.82,
+      "sixMonthsToOneYear": 9.36,
+      "oneToThreeYears": 10.8,
+      "threeToFiveYears": 12.06,
+      "fiveYearPlus": 12.24
+    },
+    {
+      "date": "1993-07-11",
+      "withinSixMonths": 9,
+      "sixMonthsToOneYear": 10.98,
+      "oneToThreeYears": 12.24,
+      "threeToFiveYears": 13.86,
+      "fiveYearPlus": 14.04
+    },
+    {
+      "date": "1995-01-01",
+      "withinSixMonths": 9,
+      "sixMonthsToOneYear": 10.98,
+      "oneToThreeYears": 12.96,
+      "threeToFiveYears": 14.58,
+      "fiveYearPlus": 14.76
+    },
+    {
+      "date": "1995-07-01",
+      "withinSixMonths": 10.08,
+      "sixMonthsToOneYear": 12.06,
+      "oneToThreeYears": 13.5,
+      "threeToFiveYears": 15.12,
+      "fiveYearPlus": 15.3
+    },
+    {
+      "date": "1996-05-01",
+      "withinSixMonths": 9.72,
+      "sixMonthsToOneYear": 10.98,
+      "oneToThreeYears": 13.14,
+      "threeToFiveYears": 14.94,
+      "fiveYearPlus": 15.12
+    },
+    {
+      "date": "1996-08-23",
+      "withinSixMonths": 9.18,
+      "sixMonthsToOneYear": 10.08,
+      "oneToThreeYears": 10.98,
+      "threeToFiveYears": 11.7,
+      "fiveYearPlus": 12.42
+    },
+    {
+      "date": "1997-10-23",
+      "withinSixMonths": 7.65,
+      "sixMonthsToOneYear": 8.64,
+      "oneToThreeYears": 9.36,
+      "threeToFiveYears": 9.9,
+      "fiveYearPlus": 10.53
+    },
+    {
+      "date": "1998-03-25",
+      "withinSixMonths": 7.02,
+      "sixMonthsToOneYear": 7.92,
+      "oneToThreeYears": 9,
+      "threeToFiveYears": 9.72,
+      "fiveYearPlus": 10.35
+    },
+    {
+      "date": "1998-07-01",
+      "withinSixMonths": 6.57,
+      "sixMonthsToOneYear": 6.93,
+      "oneToThreeYears": 7.11,
+      "threeToFiveYears": 7.65,
+      "fiveYearPlus": 8.01
+    },
+    {
+      "date": "1998-12-07",
+      "withinSixMonths": 6.12,
+      "sixMonthsToOneYear": 6.39,
+      "oneToThreeYears": 6.66,
+      "threeToFiveYears": 7.2,
+      "fiveYearPlus": 7.56
+    },
+    {
+      "date": "1999-06-10",
+      "withinSixMonths": 5.58,
+      "sixMonthsToOneYear": 5.85,
+      "oneToThreeYears": 5.94,
+      "threeToFiveYears": 6.03,
+      "fiveYearPlus": 6.21
+    },
+    {
+      "date": "2002-02-21",
+      "withinSixMonths": 5.04,
+      "sixMonthsToOneYear": 5.31,
+      "oneToThreeYears": 5.49,
+      "threeToFiveYears": 5.58,
+      "fiveYearPlus": 5.76
+    },
+    {
+      "date": "2004-10-29",
+      "withinSixMonths": 5.22,
+      "sixMonthsToOneYear": 5.58,
+      "oneToThreeYears": 5.76,
+      "threeToFiveYears": 5.85,
+      "fiveYearPlus": 6.12
+    },
+    {
+      "date": "2006-04-28",
+      "withinSixMonths": 5.4,
+      "sixMonthsToOneYear": 5.85,
+      "oneToThreeYears": 6.03,
+      "threeToFiveYears": 6.12,
+      "fiveYearPlus": 6.39
+    },
+    {
+      "date": "2006-08-19",
+      "withinSixMonths": 5.58,
+      "sixMonthsToOneYear": 6.12,
+      "oneToThreeYears": 6.3,
+      "threeToFiveYears": 6.48,
+      "fiveYearPlus": 6.84
+    },
+    {
+      "date": "2007-03-18",
+      "withinSixMonths": 5.67,
+      "sixMonthsToOneYear": 6.39,
+      "oneToThreeYears": 6.57,
+      "threeToFiveYears": 6.75,
+      "fiveYearPlus": 7.11
+    },
+    {
+      "date": "2007-05-19",
+      "withinSixMonths": 5.85,
+      "sixMonthsToOneYear": 6.57,
+      "oneToThreeYears": 6.75,
+      "threeToFiveYears": 6.93,
+      "fiveYearPlus": 7.2
+    },
+    {
+      "date": "2007-07-21",
+      "withinSixMonths": 6.03,
+      "sixMonthsToOneYear": 6.84,
+      "oneToThreeYears": 7.02,
+      "threeToFiveYears": 7.2,
+      "fiveYearPlus": 7.38
+    },
+    {
+      "date": "2007-08-22",
+      "withinSixMonths": 6.21,
+      "sixMonthsToOneYear": 7.02,
+      "oneToThreeYears": 7.2,
+      "threeToFiveYears": 7.38,
+      "fiveYearPlus": 7.56
+    },
+    {
+      "date": "2007-09-15",
+      "withinSixMonths": 6.48,
+      "sixMonthsToOneYear": 7.29,
+      "oneToThreeYears": 7.47,
+      "threeToFiveYears": 7.65,
+      "fiveYearPlus": 7.83
+    },
+    {
+      "date": "2007-12-21",
+      "withinSixMonths": 6.57,
+      "sixMonthsToOneYear": 7.47,
+      "oneToThreeYears": 7.56,
+      "threeToFiveYears": 7.74,
+      "fiveYearPlus": 7.83
+    },
+    {
+      "date": "2008-09-16",
+      "withinSixMonths": 6.21,
+      "sixMonthsToOneYear": 7.2,
+      "oneToThreeYears": 7.29,
+      "threeToFiveYears": 7.56,
+      "fiveYearPlus": 7.74
+    },
+    {
+      "date": "2008-10-09",
+      "withinSixMonths": 6.12,
+      "sixMonthsToOneYear": 6.93,
+      "oneToThreeYears": 7.02,
+      "threeToFiveYears": 7.29,
+      "fiveYearPlus": 7.47
+    },
+    {
+      "date": "2008-10-30",
+      "withinSixMonths": 6.03,
+      "sixMonthsToOneYear": 6.66,
+      "oneToThreeYears": 6.75,
+      "threeToFiveYears": 7.02,
+      "fiveYearPlus": 7.2
+    },
+    {
+      "date": "2008-11-27",
+      "withinSixMonths": 5.04,
+      "sixMonthsToOneYear": 5.58,
+      "oneToThreeYears": 5.67,
+      "threeToFiveYears": 5.94,
+      "fiveYearPlus": 6.12
+    },
+    {
+      "date": "2008-12-23",
+      "withinSixMonths": 4.86,
+      "sixMonthsToOneYear": 5.31,
+      "oneToThreeYears": 5.4,
+      "threeToFiveYears": 5.76,
+      "fiveYearPlus": 5.94
+    },
+    {
+      "date": "2010-10-20",
+      "withinSixMonths": 5.1,
+      "sixMonthsToOneYear": 5.56,
+      "oneToThreeYears": 5.6,
+      "threeToFiveYears": 5.96,
+      "fiveYearPlus": 6.14
+    },
+    {
+      "date": "2010-12-26",
+      "withinSixMonths": 5.35,
+      "sixMonthsToOneYear": 5.81,
+      "oneToThreeYears": 5.85,
+      "threeToFiveYears": 6.22,
+      "fiveYearPlus": 6.4
+    },
+    {
+      "date": "2011-02-09",
+      "withinSixMonths": 5.6,
+      "sixMonthsToOneYear": 6.06,
+      "oneToThreeYears": 6.1,
+      "threeToFiveYears": 6.45,
+      "fiveYearPlus": 6.6
+    },
+    {
+      "date": "2011-04-06",
+      "withinSixMonths": 5.85,
+      "sixMonthsToOneYear": 6.31,
+      "oneToThreeYears": 6.4,
+      "threeToFiveYears": 6.65,
+      "fiveYearPlus": 6.8
+    },
+    {
+      "date": "2011-07-07",
+      "withinSixMonths": 6.1,
+      "sixMonthsToOneYear": 6.56,
+      "oneToThreeYears": 6.65,
+      "threeToFiveYears": 6.9,
+      "fiveYearPlus": 7.05
+    },
+    {
+      "date": "2012-06-08",
+      "withinSixMonths": 5.85,
+      "sixMonthsToOneYear": 6.31,
+      "oneToThreeYears": 6.4,
+      "threeToFiveYears": 6.65,
+      "fiveYearPlus": 6.8
+    },
+    {
+      "date": "2012-07-06",
+      "withinSixMonths": 5.6,
+      "sixMonthsToOneYear": 6,
+      "oneToThreeYears": 6.15,
+      "threeToFiveYears": 6.4,
+      "fiveYearPlus": 6.55
+    },
+    {
+      "date": "2014-11-22",
+      "withinSixMonths": 5.6,
+      "sixMonthsToOneYear": 5.6,
+      "oneToThreeYears": 6,
+      "threeToFiveYears": 6,
+      "fiveYearPlus": 6.15
+    },
+    {
+      "date": "2015-03-01",
+      "withinSixMonths": 5.35,
+      "sixMonthsToOneYear": 5.35,
+      "oneToThreeYears": 5.75,
+      "threeToFiveYears": 5.75,
+      "fiveYearPlus": 5.9
+    },
+    {
+      "date": "2015-05-11",
+      "withinSixMonths": 5.1,
+      "sixMonthsToOneYear": 5.1,
+      "oneToThreeYears": 5.5,
+      "threeToFiveYears": 5.5,
+      "fiveYearPlus": 5.65
+    },
+    {
+      "date": "2015-06-28",
+      "withinSixMonths": 4.85,
+      "sixMonthsToOneYear": 4.85,
+      "oneToThreeYears": 5.25,
+      "threeToFiveYears": 5.25,
+      "fiveYearPlus": 5.4
+    },
+    {
+      "date": "2015-08-26",
+      "withinSixMonths": 4.6,
+      "sixMonthsToOneYear": 4.6,
+      "oneToThreeYears": 5,
+      "threeToFiveYears": 5,
+      "fiveYearPlus": 5.15
+    },
+    {
+      "date": "2015-10-24",
+      "withinSixMonths": 4.35,
+      "sixMonthsToOneYear": 4.35,
+      "oneToThreeYears": 4.75,
+      "threeToFiveYears": 4.75,
+      "fiveYearPlus": 4.9
+    }
+  ]
+}

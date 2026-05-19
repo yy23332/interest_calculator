@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>利息计算器</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <h1>利息计算器</h1>
+      </div>
+    </header>
+
+    <main>
+      <nav class="tab-nav" aria-label="页面功能切换">
+        <button class="tab-button active" type="button" data-tab-target="calculatorTab">利息计算器</button>
+        <button class="tab-button" type="button" data-tab-target="benchmarkRatesTab">贷款基准利率</button>
+        <button class="tab-button" type="button" data-tab-target="lprRatesTab">LPR</button>
+      </nav>
+
+      <section id="calculatorTab" class="tab-panel active">
+        <section class="calculator-shell" aria-label="利息计算器">
+        <div class="calculator-grid">
+          <form id="interestCalculator" class="calculator-form">
+            <section class="calc-card">
+              <h3>基本参数</h3>
+              <label class="form-row">
+                <span>本金</span>
+                <input id="principalInput" type="number" min="0" step="0.01" placeholder="元" />
+              </label>
+
+              <label class="form-row">
+                <span>利率类型</span>
+                <select id="rateTypeSelect">
+                  <option value="auto">贷款基准利率与LPR</option>
+                  <option value="benchmark">贷款基准利率</option>
+                  <option value="lpr">LPR</option>
+                  <option value="agreed">约定利率</option>
+                </select>
+              </label>
+
+              <label class="form-row">
+                <span>开始日期</span>
+                <input id="startDateInput" inputmode="numeric" maxlength="8" placeholder="8位数字，如20201010" />
+              </label>
+
+              <label class="form-row">
+                <span>截止日期</span>
+                <input id="endDateInput" inputmode="numeric" maxlength="8" placeholder="8位数字，如20201010" />
+              </label>
+
+              <fieldset>
+                <legend>起止日期选项</legend>
+                <label><input type="radio" name="dateMode" value="start" checked /> 算头不算尾</label>
+                <label><input type="radio" name="dateMode" value="both" /> 算头又算尾</label>
+                <label><input type="radio" name="dateMode" value="end" /> 算尾不算头</label>
+                <label><input type="radio" name="dateMode" value="neither" /> 不算头尾</label>
+              </fieldset>
+
+              <fieldset class="inline-fieldset">
+                <legend>日利率计算方式</legend>
+                <label><input type="radio" name="yearBasis" value="360" checked /> 360天</label>
+                <label><input type="radio" name="yearBasis" value="365" /> 365天</label>
+              </fieldset>
+            </section>
+
+            <section class="calc-card rate-option-card" data-rate-card="benchmark">
+              <h3>贷款基准利率选项</h3>
+              <fieldset>
+                <legend>计算方式</legend>
+                <label><input type="radio" name="benchmarkMode" value="segmented" checked /> 分段</label>
+                <label class="inline-entry">
+                  <input type="radio" name="benchmarkMode" value="fixed" />
+                  指定
+                  <span id="benchmarkFixedRow" class="fixed-rate-select" hidden>
+                    <select id="benchmarkFixedSelect"></select>
+                  </span>
+                </label>
+              </fieldset>
+
+              <fieldset>
+                <legend>档次</legend>
+                <label><input type="radio" name="benchmarkTerm" value="withinSixMonths" /> 六个月以内</label>
+                <label><input type="radio" name="benchmarkTerm" value="sixMonthsToOneYear" /> 六个月至一年</label>
+                <label><input type="radio" name="benchmarkTerm" value="oneToThreeYears" /> 一至三年</label>
+                <label><input type="radio" name="benchmarkTerm" value="threeToFiveYears" /> 三至五年</label>
+                <label><input type="radio" name="benchmarkTerm" value="fiveYearPlus" checked /> 五年以上</label>
+              </fieldset>
+
+              <fieldset>
+                <legend>加计</legend>
+                <label><input type="radio" name="benchmarkFloatMode" value="none" checked /> 不加计</label>
+                <label class="inline-entry">
+                  <input type="radio" name="benchmarkFloatMode" value="use" />
+                  加计
+                  <span class="input-unit">
+                    <input id="benchmarkFloatInput" class="no-spinner" type="number" step="0.01" placeholder="默认0，加计100%相当于按2倍计算利息" />
+                    <em>%</em>
+                  </span>
+                </label>
+              </fieldset>
+            </section>
+
+            <section class="calc-card rate-option-card" data-rate-card="lpr">
+              <h3>LPR选项</h3>
+              <fieldset>
+                <legend>计算方式</legend>
+                <label><input type="radio" name="lprMode" value="segmented" checked /> 分段</label>
+                <label class="inline-entry">
+                  <input type="radio" name="lprMode" value="fixed" />
+                  指定
+                  <span id="lprFixedRow" class="fixed-rate-select" hidden>
+                    <select id="lprFixedSelect"></select>
+                  </span>
+                </label>
+              </fieldset>
+
+              <fieldset>
+                <legend>档次</legend>
+                <label><input type="radio" name="lprTerm" value="oneYear" /> 1年期</label>
+                <label><input type="radio" name="lprTerm" value="fiveYearPlus" checked /> 5年期以上</label>
+              </fieldset>
+
+              <fieldset>
+                <legend>基点</legend>
+                <label><input type="radio" name="lprBpMode" value="none" checked /> 不使用基点</label>
+                <label class="inline-entry">
+                  <input type="radio" name="lprBpMode" value="use" />
+                  使用基点
+                  <span class="input-unit">
+                    <input id="lprBpInput" class="no-spinner" type="number" step="1" placeholder="默认0，1BP = 0.01%" />
+                    <em>BP</em>
+                  </span>
+                </label>
+              </fieldset>
+
+              <fieldset>
+                <legend>加计</legend>
+                <label><input type="radio" name="lprFloatMode" value="none" checked /> 不加计</label>
+                <label class="inline-entry">
+                  <input type="radio" name="lprFloatMode" value="use" />
+                  加计
+                  <span class="input-unit">
+                    <input id="lprFloatInput" class="no-spinner" type="number" step="0.01" placeholder="默认0，加计100%相当于按2倍计算利息" />
+                    <em>%</em>
+                  </span>
+                </label>
+              </fieldset>
+            </section>
+
+            <section class="calc-card rate-option-card" data-rate-card="agreed" hidden>
+              <h3>约定利率选项</h3>
+              <label class="form-row">
+                <span class="strong-label">约定年利率</span>
+                <span class="input-unit">
+                  <input id="agreedRateInput" type="number" step="0.0001" placeholder="年利率" />
+                  <em>%</em>
+                </span>
+              </label>
+            </section>
+
+            <div class="calculate-row">
+              <button type="submit" class="primary-button">计算</button>
+            </div>
+
+            <section class="calc-card result-card">
+              <h3>计算结果</h3>
+              <div class="result-line">
+                <span>本金</span>
+                <strong id="principalResult">--元</strong>
+              </div>
+              <div class="result-line">
+                <span>利息合计</span>
+                <strong id="interestResult">--元</strong>
+              </div>
+              <div class="result-line">
+                <span>本息合计</span>
+                <strong id="totalResult">--元</strong>
+              </div>
+              <div class="button-row">
+                <button type="reset" class="secondary-button">重置</button>
+              </div>
+              <p id="calcMessage" class="calc-message"></p>
+            </section>
+          </form>
+
+          <section class="panel segment-panel">
+            <div class="panel-title">
+              <h2>分段计息明细</h2>
+              <button id="downloadSegments" class="small-button" type="button">下载</button>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>序号</th>
+                    <th>利率类型</th>
+                    <th>开始日期</th>
+                    <th>截止日期</th>
+                    <th>天数</th>
+                    <th>年利率</th>
+                    <th>日利率</th>
+                    <th>本金</th>
+                    <th>加计前利息</th>
+                    <th>加计后利息</th>
+                  </tr>
+                </thead>
+                <tbody id="segmentTable">
+                  <tr><td colspan="10" class="empty-cell">请输入条件后点击计算</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+      </section>
+      </section>
+
+      <section id="benchmarkRatesTab" class="tab-panel" hidden>
+        <section class="summary-grid benchmark-summary" aria-label="贷款基准利率摘要">
+          <article>
+            <span>最新贷款基准利率日期</span>
+            <strong id="latestBenchmarkDate">-</strong>
+          </article>
+          <article>
+            <span>一年以内（含一年）</span>
+            <strong id="latestBenchmarkWithinOneYear">-</strong>
+          </article>
+          <article>
+            <span>一至五年（含五年）</span>
+            <strong id="latestBenchmarkOneToFiveYears">-</strong>
+          </article>
+          <article>
+            <span>五年以上</span>
+            <strong id="latestBenchmarkFiveYear">-</strong>
+          </article>
+        </section>
+
+        <article class="panel chart-panel">
+          <div class="panel-title">
+            <h2>人民币贷款基准利率</h2>
+          </div>
+          <div id="benchmarkChart" class="chart" role="img" aria-label="人民币贷款基准利率折线图"></div>
+          <div class="legend chart-legend" id="benchmarkLegend"></div>
+        </article>
+
+        <article class="panel rate-table-panel">
+          <div class="panel-title">
+            <h2>金融机构人民币贷款基准利率</h2>
+            <a href="https://camlmac.pbc.gov.cn/zhengcehuobisi/125207/125213/125440/125838/125888/2968985/index.html" target="_blank" rel="noreferrer">来源</a>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>日期</th>
+                  <th>6个月内</th>
+                  <th>6个月至1年</th>
+                  <th>1至3年</th>
+                  <th>3至5年</th>
+                  <th>5年以上</th>
+                </tr>
+              </thead>
+              <tbody id="benchmarkTable"></tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+
+      <section id="lprRatesTab" class="tab-panel" hidden>
+        <section class="summary-grid" aria-label="关键数据摘要">
+          <article>
+            <span>最新 LPR 日期</span>
+            <strong id="latestDate">-</strong>
+          </article>
+          <article>
+            <span>1年期 LPR</span>
+            <strong id="latestOneYear">-</strong>
+          </article>
+          <article>
+            <span>5年期以上 LPR</span>
+            <strong id="latestFiveYear">-</strong>
+          </article>
+          <article class="summary-action">
+            <button id="refreshLpr" class="refresh-button" type="button" title="重新访问中国银行 LPR 页面并更新本地数据">
+              刷新 LPR
+            </button>
+          </article>
+        </section>
+
+        <article class="panel chart-panel">
+          <div class="panel-title">
+            <h2>LPR 利率</h2>
+          </div>
+          <div id="lprChart" class="chart" role="img" aria-label="LPR 利率折线图"></div>
+          <div class="legend chart-legend" id="lprLegend"></div>
+        </article>
+
+        <article class="panel rate-table-panel">
+          <div class="panel-title">
+            <h2>LPR 数据</h2>
+            <a href="https://www.bankofchina.com/fimarkets/lilv/fd32/201310/t20131031_2591219.html" target="_blank" rel="noreferrer">来源</a>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>日期</th>
+                  <th>1年期</th>
+                  <th>5年期以上</th>
+                </tr>
+              </thead>
+              <tbody id="lprTable"></tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+
+      <p id="status" class="status" aria-live="polite"></p>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
